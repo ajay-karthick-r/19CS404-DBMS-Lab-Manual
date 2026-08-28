@@ -37,10 +37,10 @@ HAVING condition;
 ```
 
 **Question 1**
-```--
+--
 <img width="1033" height="251" alt="Screenshot 2026-08-28 114415" src="https://github.com/user-attachments/assets/ad3d577d-e8bf-4118-8f2a-e374142e0180" />
 
-```
+
 ```sql
 select Address ,count(*) as TotalPatients from Patients group by Address;
 ```
@@ -49,10 +49,10 @@ select Address ,count(*) as TotalPatients from Patients group by Address;
 <img width="757" height="427" alt="Screenshot 2026-08-28 114444" src="https://github.com/user-attachments/assets/43319404-5078-4d9a-93ed-24d4359ed8b8" />
 
 **Question 2**
-```---
+---
 <img width="1007" height="225" alt="Screenshot 2026-08-28 114505" src="https://github.com/user-attachments/assets/d611dbee-86f0-4ed0-b712-c6366c746e91" />
 
-```
+
 ```sql
 select PatientID, count(*)  as TotalMedications from Prescriptions group by PatientID;
 ```
@@ -110,10 +110,10 @@ select count(distinct city) as unique_cities from customer;
 
 
 **Question 5**
-```---
+---
 <img width="946" height="282" alt="Screenshot 2026-08-28 114733" src="https://github.com/user-attachments/assets/ef00836d-7b21-402c-b155-5a91892b0795" />
 
-```
+
 ```sql
 select count(*) as COUNT from customer where city!='Noida';
 ```
@@ -168,10 +168,10 @@ select count(*) as employees_in_california from employee where city='California'
 
 
 **Question 8**
-```---
+---
 <img width="1162" height="260" alt="Screenshot 2026-08-28 115059" src="https://github.com/user-attachments/assets/8ffa101c-4768-4a57-b1aa-ccfe15d350a7" />
 
-```
+
 ```sql
 select (age/5)*5 as age_group, min(salary) as "MIN(salary)" from customer1 group by (age/5)*5 having min(salary)<2000;
 ```
@@ -182,10 +182,10 @@ select (age/5)*5 as age_group, min(salary) as "MIN(salary)" from customer1 group
 
 
 **Question 9**
-```---
+---
 <img width="1188" height="275" alt="Screenshot 2026-08-28 115210" src="https://github.com/user-attachments/assets/026c682c-3381-4363-be70-b3c5fb4be471" />
 
-```
+
 ```sql
 select category_id, sum(price) as Total_Cost from products group by category_id having Total_Cost>50;
 ```
@@ -195,10 +195,10 @@ select category_id, sum(price) as Total_Cost from products group by category_id 
 
 
 **Question 10**
-```---
+---
 <img width="1221" height="261" alt="Screenshot 2026-08-28 115322" src="https://github.com/user-attachments/assets/d5c43c9c-6f05-43f1-97df-f4d8745e9a87" />
 
-```
+
 ```sql
 select jdate,max(workhour) as "MAX(workhour)" from employee1 group by jdate having max(workhour)>12;
 ```
