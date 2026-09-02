@@ -79,7 +79,7 @@ END;
 ```
 **Output:**  
 
-<img width="670" height="427" alt="image" src="https://github.com/user-attachments/assets/cb35cb4a-8617-419d-80fc-80b8abec90f7" />
+![Uploading image.png…]()
 
 ---
 
